@@ -86,15 +86,19 @@ section {
 #buy-now a {
   font-size: 2em;
   text-decoration: none;
-  color: #cccccc;
+  color: black;
   display: inline-block;
-  border-radius: 10%;
+  border-radius: 35px;
   padding: 10px;
-  background-color: #be3c33;
+  background-color: #df743c;
 }
 
 #buy-now-button:hover {
-  color: black;
+  color: #cccccc;
+}
+
+#game-desc h2 {
+  width: 80%;
 }
 
 #game-desc-1,
@@ -267,6 +271,11 @@ footer {
 
 .people {
   margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.people:hover {
+  transform: translateY(-5px);
 }
 
 .people p {
