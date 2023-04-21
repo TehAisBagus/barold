@@ -3,6 +3,11 @@
   src: url("assets/Knights\ Quest.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "PT_Serif";
+  src: url("assets/PTSerif-Regular.ttf") format("truetype");
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -13,6 +18,7 @@ body {
   margin: 0;
   font-family: KnightsQuest;
   background-color: black;
+  color: #cccccc;
 }
 
 header,
@@ -35,15 +41,19 @@ header img {
   width: 100px;
   height: 100%;
   display: block;
-  background-color: black;
+  background-color: #cccccc;
 }
 
 #barold-logo:hover {
-  background-color: white;
+  background-color: black;
+}
+
+#discord {
+  float: right;
 }
 
 section {
-  background-color: #ef402b;
+  background-color: #5f1d1e;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,9 +61,12 @@ section {
   width: 80%;
 }
 
+#game-title h1 {
+  font-size: 5em;
+}
+
 #splash-video {
   height: 50vh;
-  padding-top: 20px;
 }
 
 #splash-video video {
@@ -62,14 +75,32 @@ section {
   object-fit: contain;
 }
 
+#buy-now {
+  font-family: PT_Serif, Arial, Helvetica, sans-serif;
+}
+
+#buy-now .container {
+  padding-top: 20px;
+}
+
 #buy-now a {
   font-size: 2em;
   text-decoration: none;
-  color: black;
+  color: #cccccc;
+  display: inline-block;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: #be3c33;
 }
 
 #buy-now-button:hover {
-  color: white;
+  color: black;
+}
+
+#game-desc-1,
+#game-desc-2,
+footer {
+  font-family: PT_Serif, Arial, Helvetica, sans-serif;
 }
 
 #game-desc .container {
@@ -79,13 +110,13 @@ section {
   justify-content: center;
 }
 
-#game-desc h1 {
+#game-desc h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.7rem;
 }
 
 #game-desc p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   width: 80%;
   margin-top: 16px;
 }
@@ -245,19 +276,19 @@ section {
 
 .people a {
   text-decoration: none;
-  color: black;
+  color: #cccccc;
 }
 
 .people a:hover {
-  color: white;
+  color: black;
 }
 
 footer ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 1.5em;
-  color: white;
+  font-size: 1em;
+  color: #cccccc;
 }
 
 @media only screen and (max-width: 600px) {
@@ -265,7 +296,7 @@ footer ul {
     height: fit-content;
   }
 
-  #game-desc h1 {
+  #game-desc h2 {
     float: none;
     padding-left: 5px;
     padding-right: 5px;
