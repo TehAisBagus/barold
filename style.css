@@ -18,7 +18,7 @@ body {
 header,
 footer {
   background-color: #5f1d1e;
-  height: 30px;
+  min-height: 30px;
 }
 
 header ul {
