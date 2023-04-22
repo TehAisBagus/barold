@@ -25,6 +25,7 @@ header,
 footer {
   background-color: #5f1d1e;
   min-height: 30px;
+  width: 80%;
 }
 
 header ul {
@@ -207,6 +208,10 @@ footer {
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
+}
+
+footer li {
+  list-style: none;
 }
 
 @-webkit-keyframes zoom {
